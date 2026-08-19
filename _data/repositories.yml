@@ -1,0 +1,16 @@
+# No github_users here on purpose: that key renders the user stats card, whose "rank"
+# letter grade is a percentile of commit/PR/follower counts and measures nothing this
+# page is about. Its absence also makes every card show its owner, which distinguishes
+# what I wrote from what I maintain.
+
+repo_description_lines_max: 3
+
+github_repos:
+  - ggalloni/CosmoForge
+  - ggalloni/CHARM-Like
+  - simonsobs/SOLikeT
+  - litebird/litebird_sim
+  - CobayaSampler/cobaya
+  - ggalloni/LiLit
+  - ggalloni/profiler
+  - ggalloni/lack_of_correlation_with_GWs

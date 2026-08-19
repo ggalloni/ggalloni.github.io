@@ -39,6 +39,6 @@ Simons Observatory forecasts.
 **Master's student, University of Padova** (2025–2026, graduated July 2026). Recovery of
 $$r$$ and $$n_t$$ from Simons Observatory forecasts.
 
-**Ph.D. student, University of Padova** (2025). I designed and mentored the analysis behind
+**Ph.D. student, University of Padova** (2024). I designed and mentored the analysis behind
 [the first data-driven bounds on the quantum decoherence of inflationary gravitational
 waves](https://arxiv.org/abs/2511.14727).
