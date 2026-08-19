@@ -106,15 +106,18 @@ cv:
         XVII Meeting.'
     Mentorship:
     - bullet: '**Feb 2026 – present** External mentor, Ph.D. student, National Central University, Taiwan.
-        Working on r–n_t constraints from a joint analysis of state-of-the-art LIGO-Virgo-KAGRA likelihoods
+        Constraints on r and n_t from a joint analysis of state-of-the-art LIGO-Virgo-KAGRA likelihoods
         and Simons Observatory forecasts.'
-    - bullet: '**Nov 2025 – present** Co-supervisor, Master student, University of Padova. Recovery of
-        r and n_t using Simons Observatory forecasts.'
-    - bullet: '**Apr 2024 – present** Co-supervisor, Ph.D. student, University of Ferrara. Developed a
-        cross-spectra likelihood for tau constraints (Genesini et al. 2026), and is now working on moment-expansion
-        component separation in LiteBIRD and reionization history including astrophysical sources.'
-    - bullet: '**Feb 2024 – Nov 2024** Supervisor, Master student, University of Ferrara. Thesis: determination
-        of the reionization optical depth through a combined analysis of Planck and WMAP data.'
+    - bullet: '**Nov 2025 – Jul 2026** Co-supervisor, Master''s student, University of Padova. Recovery
+        of r and n_t from Simons Observatory forecasts; graduated July 2026.'
+    - bullet: '**2025** Mentor, Ph.D. student, University of Padova. Designed and mentored the analysis
+        behind the first data-driven bounds on the quantum decoherence of inflationary gravitational waves
+        (de Kruijf, Galloni & Bartolo).'
+    - bullet: '**Feb 2024 – present** Supervisor, then co-supervisor with L. Pagano, University of Ferrara.
+        Master''s thesis on the reionization optical depth from a combined Planck and WMAP analysis (graduated
+        2024); now a Ph.D. student, having developed a cross-spectra likelihood for tau (Genesini et al.
+        2026) and working on moment-expansion component separation in LiteBIRD and on reionization history
+        including astrophysical sources.'
     Skills:
     - name: Statistics
       level: Expert

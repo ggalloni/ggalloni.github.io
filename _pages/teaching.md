@@ -25,20 +25,20 @@ material existed. They were released openly and are still in use.
 
 I supervise or mentor four researchers, at three institutions in two countries.
 
-**Ph.D. student, University of Ferrara** (2024–, co-supervised with Luca Pagano). She
-developed a cross-spectra likelihood for constraints on the reionization optical depth,
-leading [Genesini et al. (2026)](https://arxiv.org/abs/2603.22454), and now works on
-moment-expansion component separation in LiteBIRD and on reionization history including
-astrophysical sources. I supervised her earlier master's thesis (2024) on the optical depth
-from a combined Planck and WMAP analysis.
+**Ph.D. student, University of Ferrara** (2024–, co-supervised with Luca Pagano). I first
+supervised her master's thesis on the reionization optical depth from a combined Planck and
+WMAP analysis; she stayed on for her PhD, developed a cross-spectra likelihood for the
+optical depth and led [Genesini et al. (2026)](https://arxiv.org/abs/2603.22454). She now
+works on moment-expansion component separation in LiteBIRD and on reionization history
+including astrophysical sources.
 
-**Master's student, University of Padova** (2025–). Recovery of $$r$$ and $$n_t$$ from Simons
-Observatory forecasts.
+**Ph.D. student, National Central University, Taiwan** (2026–, external mentor). Constraints
+on $$r$$ and $$n_t$$ from a joint analysis of state-of-the-art LIGO-Virgo-KAGRA likelihoods and
+Simons Observatory forecasts.
 
-**Ph.D. student, National Central University, Taiwan** (2026–, external mentor). Joint
-constraints on $$r$$ and $$n_t$$ from state-of-the-art LIGO-Virgo-KAGRA likelihoods and Simons
-Observatory forecasts.
+**Master's student, University of Padova** (2025–2026, graduated July 2026). Recovery of
+$$r$$ and $$n_t$$ from Simons Observatory forecasts.
 
-**Ph.D. student, University of Padova.** I designed and mentored the analysis behind
+**Ph.D. student, University of Padova** (2025). I designed and mentored the analysis behind
 [the first data-driven bounds on the quantum decoherence of inflationary gravitational
 waves](https://arxiv.org/abs/2511.14727).
