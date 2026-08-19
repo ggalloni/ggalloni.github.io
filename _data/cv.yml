@@ -1,0 +1,131 @@
+cv:
+  name: Giacomo Galloni
+  label: Postdoctoral Researcher — Cosmology
+  email: giacomo.galloni@unife.it
+  location: Ferrara, Italy
+  image: ''
+  summary: 'My research focuses on cosmic inflation through the Cosmic Microwave Background (CMB) and
+    Gravitational Waves (GWs), with a methodological emphasis on likelihood analysis. I lead the large-scale
+    CMB likelihood effort within the LiteBIRD collaboration and co-lead the Likelihood & Theory group
+    of the Simons Observatory (SO), where I develop end-to-end pipelines that combine harmonic and pixel-based
+    estimators with realistic component separation. In parallel, I am building a unified likelihood framework
+    intended for use across current and future CMB experiments. On the science side, I have produced Bayesian
+    and frequentist constraints on the amplitude and tilt of the primordial tensor spectrum, and I work
+    on stochastic GW backgrounds and their cross-correlation with the CMB, including recent data-driven
+    bounds on the quantum decoherence of inflationary GWs.
+
+    '
+  social_networks:
+  - network: GitHub
+    username: ggalloni
+  sections:
+    Experience:
+    - company: University of Ferrara
+      position: Postdoctoral Researcher
+      location: Ferrara, Italy
+      start_date: 2024-02
+      end_date: present
+      summary: 'Department of Physics and Earth Sciences. Member of the LiteBIRD and Simons Observatory
+        collaborations.
+
+        '
+    Education:
+    - institution: University of Roma Tor Vergata
+      location: Rome, Italy
+      area: Astronomy, Astrophysics and Space Science
+      studyType: Ph.D. with honors
+      start_date: 2020-11
+      end_date: 2024-01
+      highlights:
+      - 'Supervisors: Prof. Nicola Vittorio, Prof. Sabino Matarrese.'
+      - 'Thesis: Exploring inflation with cosmic microwave background and gravitational waves.'
+    - institution: University of Padova
+      location: Padova, Italy
+      area: Physics of the Universe
+      studyType: M.Sc. with honors
+      start_date: 2018-10
+      end_date: 2020-10
+      highlights:
+      - Thesis supervised by Prof. Nicola Bartolo and Dr. Angelo Ricciardone.
+    - institution: University of Padova
+      location: Padova, Italy
+      area: Physics
+      studyType: B.Sc.
+      start_date: 2014-10
+      end_date: 2018-10
+      highlights:
+      - Thesis supervised by Prof. Giacomo Ciani, carried out at the University of Florida.
+    Fellowships, Visitings and Schools:
+    - bullet: '**Sep 2023 – Dec 2023** Funded visiting researcher, IJCLab.'
+    - bullet: '**Jun 2023 – Jul 2023** Funded visiting researcher, Kavli IPMU. Through the MSCA project
+        CMB-INFLATE.'
+    - bullet: '**Nov 2020 – Jan 2024** Full Ph.D. fellowship, University of Roma La Sapienza.'
+    - bullet: '**Jun 2017 – Sep 2017** Funded research internship, University of Florida. Adaptive thermal-lensing
+        compensation for LIGO; bachelor thesis.'
+    - bullet: '**Mar 2022** Workshop on Theoretical Aspects of Astroparticle Physics, Cosmology and Gravitation,
+        Galileo Galilei Institute.'
+    - bullet: '**Dec 2021** Theory for Observers & Observations for Theorists, Tonale Winter School in
+        Cosmology. Organised by the University of Heidelberg.'
+    - bullet: '**Nov 2021** Workshop on CLASS and Cobaya, University of Padova.'
+    Projects:
+    - name: CosmoForge — Power Spectrum and Likelihood Framework
+      start_date: 2024
+      end_date: present
+      summary: Python framework for power-spectrum estimation and likelihood analysis on large-scale CMB
+        data, designed as a unified tool for LiteBIRD, SO and future experiments.
+    - name: BICEP Diagnosis with the marginalized HL Likelihood
+      start_date: 2025
+      end_date: present
+      summary: Leading a re-analysis of BICEP data exploiting new capabilities of the marginalized Hamimeche
+        & Lewis (mHL) likelihood, stress-testing existing constraints on tensor modes.
+    Collaboration Projects:
+    - bullet: '**Jun 2024 – present** LiteBIRD — Foreground and Sensitivity Studies. Interfacing my Python
+        package with foreground-separation techniques and sensitivity analyses critical for assessing
+        LiteBIRD''s capabilities.'
+    - bullet: '**May 2024 – present** Simons Observatory — Likelihood & Theory. Maintenance and development
+        of SOLikeT. Contributed single-mode likelihoods and led a complete restructuring of LAT MFLike.'
+    - bullet: '**Sep 2024 – present** Simons Observatory — Power Spectrum. Contributing to the Power Spectrum
+        group, with planned developments on QML-based estimators for large-scale modes.'
+    - bullet: '**Jan 2026 – present** LiteBIRD — Moment-Expansion Component Separation. Collaborating
+        with the moment-expansion component-separation team to improve and characterize the approach in
+        the LiteBIRD context.'
+    - bullet: '**Jun 2023 – present** LiteBIRD — MaPLEs team. Leading efforts to study and characterize
+        the likelihood of LiteBIRD; recently released within the collaboration a Python package to perform
+        this analysis.'
+    - bullet: '**Apr 2023 – present** LiteBIRD — Simulation Team. Validation tests on the products of
+        the Simulations group, a cosmological analysis of CMB temperature with LiteBIRD, and development
+        of parts of the litebird_sim repository.'
+    - bullet: '**May 2022 – present** LiteBIRD — Tests on Cosmic Inflation. Monte Carlo study to understand
+        which inflationary models can be detected by LiteBIRD.'
+    Service and Leadership:
+    - bullet: '**Sep 2024 – present** Co-lead, Likelihood & Theory group, Simons Observatory.'
+    - bullet: '**Dec 2025 – present** Early Career Coordination (ECC) representative, LiteBIRD Collaboration.'
+    - bullet: '**Jan 2026** Scientific Organizing Committee member, LiteBIRD Face-to-Face Collaboration
+        Meeting.'
+    - bullet: '**Jul 2024** Session organizer and chair, "Present and future of the CMB", Marcel Grossmann
+        XVII Meeting.'
+    Mentorship:
+    - bullet: '**Feb 2026 – present** External mentor, Ph.D. student, National Central University, Taiwan.
+        Working on r–n_t constraints from a joint analysis of state-of-the-art LIGO-Virgo-KAGRA likelihoods
+        and Simons Observatory forecasts.'
+    - bullet: '**Nov 2025 – present** Co-supervisor, Master student, University of Padova. Recovery of
+        r and n_t using Simons Observatory forecasts.'
+    - bullet: '**Apr 2024 – present** Co-supervisor, Ph.D. student, University of Ferrara. Developed a
+        cross-spectra likelihood for tau constraints (Genesini et al. 2026), and is now working on moment-expansion
+        component separation in LiteBIRD and reionization history including astrophysical sources.'
+    - bullet: '**Feb 2024 – Nov 2024** Supervisor, Master student, University of Ferrara. Thesis: determination
+        of the reionization optical depth through a combined analysis of Planck and WMAP data.'
+    Skills:
+    - name: Statistics
+      level: Expert
+      icon: fa-solid fa-chart-line
+      keywords: Bayesian methods, frequentist methods, QML estimators, pixel-based CMB likelihoods, profile
+        likelihoods
+    - name: Programming
+      level: Expert
+      icon: fa-solid fa-code
+      keywords: Python, C, package design, maintenance, CI workflows, MPI, HPC
+    - name: Boltzmann codes
+      level: Proficient
+      icon: fa-solid fa-atom
+      keywords: CAMB, CLASS

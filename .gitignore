@@ -1,0 +1,37 @@
+_site
+.bundle
+.DS_store
+.idea
+.jekyll-cache
+.jekyll-metadata
+.ruby-version
+.sass-cache
+.tweet-cache
+.venv
+assets/libs/
+assets/rendercv/rendercv_output/*.typ
+al-folio-upgrade-report.md
+node_modules/
+output/playwright/
+test-results/
+vendor
+
+# Python bytecode from bin/ helper scripts
+__pycache__/
+*.pyc
+
+# Fetched from the autoCV repo at build time, not committed
+assets/pdf/cv.pdf
+
+# local Jekyll preview (bundler with a repo-local GEM_HOME)
+.bundle/
+vendor/
+.gems/
+
+# LaTeX build products from cv.tex (the PDF is built in CI)
+cv.pdf
+*.aux
+*.log
+*.out
+*.fls
+*.fdb_latexmk

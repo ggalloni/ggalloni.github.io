@@ -1,0 +1,28 @@
+# Badge colours sit on the same cold-to-warm axis as the site accent (see
+# _sass/_local.scss): refereed journals take the cold pole, preprints the warm one.
+"JCAP":
+  url: https://iopscience.iop.org/journal/1475-7516
+  color: "#1F4E8C"
+
+"PRD":
+  url: https://journals.aps.org/prd/
+  color: "#2C6BA8"
+
+"A&A":
+  url: https://www.aanda.org/
+  color: "#3E5C76"
+
+"Dark Univ.":
+  url: https://www.sciencedirect.com/journal/physics-of-the-dark-universe
+  color: "#4A5568"
+
+"SPIE":
+  url: https://spie.org/conferences-and-exhibitions/astronomical-telescopes-and-instrumentation
+  color: "#3E5C76"
+
+"Thesis":
+  color: "#6B7280"
+
+"arXiv":
+  url: https://arxiv.org/
+  color: "#C8461E"

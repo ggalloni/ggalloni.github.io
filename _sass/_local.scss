@@ -1,0 +1,166 @@
+/*******************************************************************************
+ * Site-specific styles. Not part of al-folio — loaded last from
+ * assets/css/main.scss so these rules win over the theme's.
+ *
+ * Design notes:
+ *  - Headings are set in EB Garamond, the same face as the typeset CV, so the
+ *    printed and on-screen identities match.
+ *  - Body text uses a system sans. The theme declares Roboto but never loads a
+ *    webfont for it, so visitors without Roboto installed silently fell back to
+ *    Arial; naming the system stack makes the fallback deliberate.
+ *  - The warm accent (--warm-accent) marks current state only. Cold blue is
+ *    navigation, warm red is "you are here" — the two poles of a CMB map.
+ ******************************************************************************/
+
+/* EB Garamond, subset to Latin + punctuation (~25 KB each). Self-hosted rather
+   than fetched from Google Fonts: no third-party request, no GDPR question. */
+@font-face {
+  font-family: "EB Garamond";
+  src: url("/assets/fonts/EBGaramond-Regular.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "EB Garamond";
+  src: url("/assets/fonts/EBGaramond-SemiBold.woff2") format("woff2");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "EB Garamond";
+  src: url("/assets/fonts/EBGaramond-Italic.woff2") format("woff2");
+  font-weight: 400;
+  font-style: italic;
+  font-display: swap;
+}
+
+/* The accent is set here rather than in a local _sass/_variables.scss: the theme's
+   _themes.scss resolves `@use "variables"` to its own sibling inside the gem, so a
+   local copy of that file is never reached. Overriding the custom properties works
+   by cascade order and leaves one less vendored file to drift from upstream. */
+:root {
+  --local-serif: "EB Garamond", Georgia, "Times New Roman", serif;
+  --local-sans: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+
+  --global-theme-color: #1f4e8c; /* cold pole: links, navigation */
+  --global-hover-color: #1f4e8c;
+  --warm-accent: #c8461e; /* warm pole: current state only */
+}
+
+html[data-theme="dark"] {
+  /* Both poles lightened for contrast against the dark background. */
+  --global-theme-color: #8ab6e8;
+  --global-hover-color: #8ab6e8;
+  --warm-accent: #e8825f;
+}
+
+body {
+  font-family: var(--local-sans);
+}
+
+/* Headings carry the serif. 600 rather than the theme's 300: a light weight at
+   40px reads underpowered above dense technical prose. */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.post-title,
+.publications h2 {
+  font-family: var(--local-serif);
+  font-weight: 600;
+  letter-spacing: -0.01em;
+}
+
+/* The wordmark in the navbar is the one place the serif appears at small size,
+   which ties the header to the page titles below it. */
+.navbar-brand {
+  font-family: var(--local-serif);
+}
+
+/* "You are here", in the warm pole. */
+.navbar .nav-item .nav-link.active,
+.navbar .nav-item .nav-link:hover {
+  color: var(--warm-accent) !important;
+}
+
+/* The theme sets the profile sidebar's more_info block in monospace, which turns
+   a postal address into what looks like console output. */
+.profile .more-info,
+.more-info {
+  font-family: inherit;
+  font-size: 0.9rem;
+  line-height: 1.5;
+}
+
+/* On a phone the profile photo rendered ~360px tall at full column width, pushing
+   the opening sentence below the fold. Cap it and centre it. */
+@media (max-width: 576px) {
+  .profile img {
+    max-height: 40vh;
+    width: auto;
+    max-width: 60%;
+    display: block;
+    margin-inline: auto;
+  }
+}
+
+/*******************************************************************************
+ * CV: make the untemplated sections match the templated ones.
+ *
+ * al-folio's CV renderer only has card templates for a fixed set of section names
+ * (Experience, Education, Projects, Skills, ...). Anything else falls to a generic
+ * branch that emits a flat list, so "Mentorship" looked plainer than "Experience"
+ * right above it. These rules give the generic sections the same date-left,
+ * content-right rhythm. Scoped by section anchor id so nothing else is touched.
+ *
+ * Done in CSS rather than by overriding cv/render.liquid: the generic branch is
+ * inline in that 389-line file, and vendoring it would mean reconciling the CV
+ * feature's core on every upstream merge.
+ ******************************************************************************/
+
+#fellowships-visitings-and-schools,
+#collaboration-projects,
+#service-and-leadership,
+#mentorship {
+  + .card {
+    .list-group-item {
+      padding-inline: 0;
+      background: transparent;
+      border: 0;
+
+      /* The leading date, styled to echo the badge the templated sections use. */
+      strong {
+        font-family: var(--local-sans);
+        font-size: 0.7rem;
+        font-weight: 700;
+        letter-spacing: 0.03em;
+        text-transform: uppercase;
+        color: var(--global-theme-color);
+        white-space: nowrap;
+      }
+    }
+
+    /* Each bullet renders as its own <ul>; collapse the gaps between them. */
+    .list-group {
+      margin-bottom: 0;
+    }
+
+    /* Two columns only where there is room for them. The CV page carries a TOC
+       sidebar, so the content column is narrower than it looks — below this width a
+       fixed date column left the text squeezed into ~220px. */
+    @media (min-width: 992px) {
+      .list-group-item {
+        display: grid;
+        grid-template-columns: 9.5rem 1fr;
+        gap: 0 1rem;
+        align-items: baseline;
+      }
+    }
+  }
+}

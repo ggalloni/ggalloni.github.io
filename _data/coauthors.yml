@@ -1,0 +1,7 @@
+# Maps coauthor surnames to their homepages, so jekyll-scholar links them in the
+# bibliography. Anyone absent here renders as plain text, so this can stay empty.
+# Format:
+#
+# "Surname":
+#   - firstname: ["Fullname", "F."]
+#     url: https://their.site

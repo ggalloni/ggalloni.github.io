@@ -1,0 +1,9 @@
+# Social links and IDs, displayed in the order defined here.
+# See https://github.com/george-gca/jekyll-socials
+cv_pdf: /cv/pdf/ # viewer page; a bare .pdf link downloads instead of displaying
+email: giacomo.galloni@unife.it
+orcid_id: 0000-0002-2412-8311
+inspirehep_id: 2038922
+scholar_userid: f7Kk9yQAAAAJ
+github_username: ggalloni
+rss_icon: false

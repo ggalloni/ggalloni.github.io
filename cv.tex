@@ -1,0 +1,184 @@
+% Giacomo Galloni — CV (Classic Academic style)
+% Compile with pdflatex or xelatex (xelatex recommended for EB Garamond).
+\documentclass[10pt,a4paper]{article}
+
+\usepackage[a4paper,top=14mm,bottom=12mm,left=18mm,right=18mm]{geometry}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{ebgaramond}            % swap for \usepackage{times} or remove if not installed
+\usepackage{microtype}
+\usepackage[hidelinks]{hyperref}
+\usepackage{titlesec}
+\usepackage{enumitem}
+\usepackage{xcolor}
+\usepackage{tabularx}
+\usepackage{array}
+\usepackage{ragged2e}
+\usepackage{fancyhdr}
+
+% --- Colors -----------------------------------------------------------------
+\definecolor{ink}{HTML}{1A1612}
+\definecolor{muted}{HTML}{5A4A36}
+\definecolor{rule}{HTML}{A89B85}
+\color{ink}
+
+% --- Page background (paper tint, optional) ---------------------------------
+% \usepackage{pagecolor}
+% \pagecolor[HTML]{FBF8F3}
+
+% --- Section heading: small caps, letter-spaced, underlined -----------------
+\titleformat{\section}
+  {\normalfont\bfseries\scshape\large}
+  {}{0pt}{}
+  [\vspace{-4pt}\textcolor{ink}{\rule{\linewidth}{0.4pt}}]
+\titlespacing*{\section}{0pt}{6pt}{2pt}
+
+% --- Date + content row (hanging date in left column) -----------------------
+\newcommand{\cvrow}[2]{%
+  \noindent\begin{tabularx}{\linewidth}{@{}p{30mm}@{\hspace{4mm}}X@{}}
+    {\itshape\small\textcolor{muted}{#1}} & #2 \\
+  \end{tabularx}\par\vspace{0.3pt}
+}
+
+% --- Two-column compact list (talks, fellowships) ---------------------------
+\newenvironment{twocol}{%
+  \begin{minipage}[t]{\linewidth}\setlength{\columnsep}{6mm}\begin{multicols}{2}\RaggedRight
+}{%
+  \end{multicols}\end{minipage}\vspace{2pt}
+}
+\usepackage{multicol}
+
+\newcommand{\cvrowS}[2]{%
+  \noindent{\itshape\footnotesize\textcolor{muted}{#1}}\quad{\small #2}\par\vspace{0.3pt}
+}
+
+% --- Publication line -------------------------------------------------------
+\newcommand{\pub}[4]{%
+  \noindent #1\ (#2). \textit{``#3''}.\ {\small\textcolor{muted}{#4}}\par\vspace{0.8pt}
+}
+
+% --- Header / name block ----------------------------------------------------
+\newcommand{\cvheader}[3]{%
+  {\fontsize{28pt}{30pt}\selectfont #1}\par\vspace{2pt}
+  {\itshape\textcolor{muted}{#2}}\par\vspace{6pt}
+  \textcolor{rule}{\rule{\linewidth}{0.4pt}}\vspace{3pt}\par
+  {\footnotesize\scshape #3}\par
+  \vspace{1pt}\textcolor{rule}{\rule{\linewidth}{0.4pt}}\par
+}
+
+\setlength{\parindent}{0pt}
+\pagestyle{empty}
+
+\begin{document}
+
+\cvheader
+  {Giacomo Galloni}
+  {Postdoctoral Researcher --- Cosmology \textperiodcentered{} University of Ferrara}
+  {GitHub\,\textperiodcentered\,ggalloni \quad ORCID\,\textperiodcentered\,0000-0002-2412-8311 \quad Email\,\textperiodcentered\,giacomo.galloni@unife.it}
+
+% --- Research Interests -----------------------------------------------------
+\section*{Research Interests}
+\justifying
+My research focuses on cosmic inflation through the Cosmic Microwave Background (CMB) and
+Gravitational Waves (GWs), with a methodological emphasis on likelihood analysis. I lead the
+large-scale CMB likelihood effort within the LiteBIRD collaboration and co-lead the Likelihood \&
+Theory group of the Simons Observatory (SO), where I develop end-to-end pipelines that combine
+harmonic and pixel-based estimators with realistic component separation. In parallel, I am building
+a unified likelihood framework intended for use across current and future CMB experiments. On the
+science side, I have produced Bayesian and frequentist constraints on the amplitude and tilt of the
+primordial tensor spectrum, and I work on stochastic GW backgrounds and their cross-correlation
+with the CMB, including recent data-driven bounds on the quantum decoherence of inflationary GWs.
+
+% --- Positions & Education --------------------------------------------------
+\section*{Positions \& Education}
+\cvrow{Feb 2024 --- present}{\textbf{Postdoctoral Researcher}, University of Ferrara.}
+\cvrow{Nov 2020 --- Jan 2024}{\textbf{Ph.D.\ with honors in Astronomy, Astrophysics and Space Science}, University of Roma Tor Vergata. \textcolor{muted}{Supervisors: Prof.\ Nicola Vittorio, Prof.\ Sabino Matarrese.}}
+\cvrow{Oct 2018 --- Oct 2020}{\textbf{M.Sc.\ with honors, Physics of the Universe}, University of Padova. \textcolor{muted}{Thesis: Prof.\ Nicola Bartolo, Dr.\ Angelo Ricciardone.}}
+\cvrow{Oct 2014 --- Oct 2018}{\textbf{B.Sc.\ in Physics}, University of Padova. \textcolor{muted}{Thesis: Prof.\ Giacomo Ciani.}}
+
+% --- Fellowships, Visitings & Schools ---------------------------------------
+\section*{Fellowships, Visitings \& Schools}
+\begin{twocol}
+\cvrowS{Sep --- Dec 2023}{Funded visiting at IJCLab, Orsay (France).}
+\cvrowS{Jun --- Jul 2023}{Funded visiting at Kavli IPMU, Tokyo (Japan) via MSCA CMB-INFLATE.}
+\cvrowS{Nov 2020 --- Jan 2024}{Full Ph.D.\ fellowship, University of Roma La Sapienza.}
+\cvrowS{Jun --- Sep 2017}{Funded internship at the University of Florida (bachelor thesis).}
+\cvrowS{Mar 2022}{GGI workshop on Astroparticle Physics, Cosmology and Gravitation, Firenze.}
+\cvrowS{Dec 2021}{Tonale Winter School in Cosmology, University of Heidelberg.}
+\cvrowS{Nov 2021}{Workshop on CLASS and Cobaya, University of Padova.}
+\end{twocol}
+
+% --- Selected Publications --------------------------------------------------
+\section*{Selected Publications}
+{\footnotesize\itshape\textcolor{muted}{Full list on Google Scholar and INSPIRE-HEP. First-author and small-group papers below.}}\par\vspace{3pt}
+
+\pub{Genesini, V., G.\ Galloni, et al.}{2026}{Cross-spectra likelihood for robust $\tau$ constraints from all satellite polarisation data}{arXiv: 2603.22454 [astro-ph.CO]}
+\pub{Galloni, G., P.\ Campeti, et al.}{2025}{Accurate and efficient likelihood modeling for large-scale CMB data}{JCAP 12, p.\ 052 --- doi:10.1088/1475-7516/2025/12/052 --- arXiv:2505.24829}
+\pub{Giardiello, S., A.\ J.\ Duivenvoorden, et al.}{2025}{Modeling beam chromaticity for high-resolution CMB analyses}{Phys.\ Rev.\ D 111, p.\ 043502 --- arXiv:2411.10124}
+\pub{Kruijf, J.\ de, G.\ Galloni, et al.}{2025}{The first data-driven bounds on the quantum decoherence of inflationary gravitational waves}{arXiv: 2511.14727 [astro-ph.CO]}
+\pub{Galloni, G., S.\ Henrot-Versillé, et al.}{2024}{Robust constraints on tensor perturbations from cosmological data: a Bayesian and frequentist comparative analysis}{Phys.\ Rev.\ D 110.6, p.\ 063511 --- arXiv:2405.04455}
+\pub{Galloni, G., M.\ Ballardini, et al.}{2023}{Unraveling the CMB lack-of-correlation anomaly with the cosmological GW background}{JCAP 10, p.\ 013 --- arXiv:2305.18184}
+\pub{Galloni, G., N.\ Bartolo, et al.}{2023}{Updated constraints on amplitude and tilt of the tensor primordial spectrum}{JCAP 04, p.\ 062 --- arXiv:2208.00188}
+\pub{Galloni, G., N.\ Bartolo, et al.}{2022}{Test of the statistical isotropy of the universe using gravitational waves}{JCAP 09, p.\ 046 --- arXiv:2202.12858}
+
+% --- Independent Projects ---------------------------------------------------
+\section*{Independent Projects}
+\cvrow{Ongoing}{\textbf{CosmoForge --- Power Spectrum and Likelihood Framework.} Python framework for power-spectrum estimation and likelihood analysis on large-scale CMB data, designed as a unified tool for LiteBIRD, SO, and future experiments.}
+\cvrow{In prep.}{\textbf{BICEP Diagnosis with the marginalized HL Likelihood.} Re-analysis of BICEP data exploiting new capabilities of the marginalized Hamimeche \& Lewis (mHL) likelihood, stress-testing existing constraints on tensor modes.}
+
+% --- Collaboration Projects -------------------------------------------------
+\section*{Collaboration Projects}
+\cvrow{Jun 2024 ---}{\textbf{LiteBIRD --- Foreground and Sensitivity Studies.} Interfacing my Python package with foreground separation and sensitivity analyses.}
+\cvrow{May 2024 ---}{\textbf{SO --- Likelihood \& Theory.} Co-lead of the group; maintenance and development of SOLikeT. Contributed single-mode likelihoods and led the restructuring of LAT MFLike.}
+\cvrow{Sep 2024 ---}{\textbf{SO --- Power Spectrum.} Contributing to the Power Spectrum group, with planned developments on QML-based estimators for large-scale modes.}
+\cvrow{Jan 2026 ---}{\textbf{LiteBIRD --- Moment-Expansion Component Separation.} Improving and characterizing the moment-expansion approach in the LiteBIRD context.}
+\cvrow{Jun 2023 ---}{\textbf{LiteBIRD --- MaPLEs team.} Leading efforts to study and characterize the likelihood of LiteBIRD; released within the collaboration a Python package to perform this analysis.}
+\cvrow{Apr 2023 ---}{\textbf{LiteBIRD --- Simulation Team.} Validation tests, cosmological analysis of CMB temperature with LiteBIRD, and development of parts of \texttt{litebird\_sim}.}
+\cvrow{May 2022 ---}{\textbf{LiteBIRD --- Tests on Cosmic Inflation.} Monte-Carlo study of which inflationary models can be detected by LiteBIRD.}
+
+% --- Service & Leadership ---------------------------------------------------
+\section*{Service \& Leadership}
+\begin{twocol}
+\cvrowS{Sep 2024 ---}{Co-lead, Likelihood \& Theory group, Simons Observatory.}
+\cvrowS{Dec 2025 ---}{Early Career Coordination (ECC) representative, LiteBIRD.}
+\cvrowS{Jan 2026}{SOC member, LiteBIRD Face-to-Face Meeting.}
+\cvrowS{Jul 2024}{Session organizer \& chair on the present/future of CMB, Marcel Grossman XVII (Pescara).}
+\end{twocol}
+
+% --- Selected Talks ---------------------------------------------------------
+\section*{Selected Talks}
+\begin{twocol}
+\cvrowS{May 2026}{Invited Seminar at SISSA (Italy).}
+\cvrowS{Apr 2026}{Invited Speaker, GRaviCon 2026, Pisa (Italy).}
+\cvrowS{Nov 2025}{Invited Speaker, GW-CMB 2025, National Central University (Taiwan).}
+\cvrowS{Sep 2025}{Invited Speaker, Tensions in Cosmology, Corfu (Greece).}
+\cvrowS{May 2025}{Invited Outreach Talk, Pint of Science, Ferrara (Italy).}
+\cvrowS{Dec 2024}{Invited Seminar, University of Rome Tor Vergata (Italy).}
+\cvrowS{Dec 2024}{Invited Seminar, University of Padova (Italy).}
+\cvrowS{Jul 2024}{Invited Speaker, Marcel Grossman XVII, Pescara (Italy) --- ICRANet.}
+\cvrowS{Jul 2024}{Invited Speaker, KEK CMB Group Meeting, Tsukuba (Japan).}
+\cvrowS{Feb 2024}{Invited Speaker, ASI-LiteBIRD, Frascati (Italy).}
+\cvrowS{Dec 2023}{Invited Speaker, Univers du pôle A2C, Orsay (France).}
+\cvrowS{May 2023}{Invited Seminar, University of Padova (Italy).}
+\cvrowS{Oct 2022}{Invited Speaker, LISA Community Call.}
+\cvrowS{Apr 2022}{Invited Seminar, University of Ferrara (Italy).}
+\end{twocol}
+
+% --- Mentorship -------------------------------------------------------------
+\section*{Mentorship}
+\cvrow{Feb 2026 ---}{External mentor of a Ph.D.\ student at National Central University (Taiwan), working on $r$--$n_t$ constraints from a joint analysis of LIGO-Virgo-KAGRA likelihoods and Simons Observatory forecasts.}
+\cvrow{Nov 2025 ---}{Co-supervisor of a Master student at the University of Padova, on the recovery of $r$ and $n_t$ from SO forecasts.}
+\cvrow{Apr 2024 ---}{Co-supervisor of a Ph.D.\ student at the University of Ferrara, who developed a cross-spectra likelihood for $\tau$ (Genesini et al.\ 2026), now working on moment-expansion component separation and reionization history.}
+\cvrow{Feb --- Nov 2024}{Supervisor of a Master student, Ferrara. \textit{Thesis:} ``Determination of the Reionization Optical Depth through a Combined Analysis of Planck and WMAP data.''}
+
+% --- Software Skills --------------------------------------------------------
+\section*{Software Skills}
+\noindent\textbf{Statistics.} Expert in Bayesian and frequentist methods. Author of CosmoForge, a unified Python framework for QML and pixel-based CMB likelihood analyses; contributed to Cobaya; developed a profile-likelihood sampler.\par\vspace{1pt}
+\noindent\textbf{Programming.} Highly proficient in Python and C, with strong experience in package design, maintenance, and CI workflows. Author of CosmoForge, maintainer of SOLikeT, contributor to \texttt{litebird\_sim} and several open-source cosmology repositories.\par\vspace{1pt}
+\noindent\textbf{Boltzmann codes.} Proficient user of CAMB and CLASS.
+
+\vfill
+\noindent\textcolor{rule}{\rule{\linewidth}{0.4pt}}\par\vspace{2pt}
+{\footnotesize\textcolor{muted}{May 12, 2026 \hfill \textit{Giacomo Galloni}}}
+
+\end{document}
