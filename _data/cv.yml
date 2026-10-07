@@ -8,8 +8,7 @@ cv:
     Gravitational Waves (GWs), with a methodological emphasis on likelihood analysis. I lead the large-scale
     CMB likelihood effort within the LiteBIRD collaboration and co-lead the Likelihood & Theory group
     of the Simons Observatory (SO), where I develop end-to-end pipelines that combine harmonic and pixel-based
-    estimators with realistic component separation. In parallel, I am building a unified likelihood framework
-    intended for use across current and future CMB experiments. On the science side, I have produced Bayesian
+    estimators with realistic component separation. In parallel, I develop CosmoForge, a unified likelihood framework for current and future CMB experiments, which I keep improving and extending with new features. On the science side, I have produced Bayesian
     and frequentist constraints on the amplitude and tilt of the primordial tensor spectrum, and I work
     on stochastic GW backgrounds and their cross-correlation with the CMB, including recent data-driven
     bounds on the quantum decoherence of inflationary GWs.
