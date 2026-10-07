@@ -127,8 +127,8 @@ INPUT /opt/texlive/texdir/texmf-dist/tex/latex/ebgaramond/T1EBGaramond-OsF.fd
 INPUT /opt/texlive/texdir/texmf-dist/tex/latex/ebgaramond/T1EBGaramond-OsF.fd
 INPUT /opt/texlive/texdir/texmf-dist/tex/latex/ebgaramond/T1EBGaramond-OsF.fd
 INPUT /opt/texlive/texdir/texmf-dist/fonts/tfm/public/ebgaramond/EBGaramond-Regular-osf-t1.tfm
-INPUT /opt/texlive/texdir/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def
-INPUT /opt/texlive/texdir/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def
+INPUT /opt/texlive/texdir/texmf-dist/tex/latex/l3kernel/l3backend-pdftex.def
+INPUT /opt/texlive/texdir/texmf-dist/tex/latex/l3kernel/l3backend-pdftex.def
 INPUT ./cv.aux
 INPUT ./cv.aux
 INPUT cv.aux
