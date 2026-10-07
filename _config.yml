@@ -232,6 +232,8 @@ exclude:
   - package.json
   - package-lock.json
   - cv.tex # compiled to assets/pdf/cv.pdf by the deploy workflow
+  - cv-pdfa.tex # PDF/A variant for administrative submission, built locally
+  - cv-pdfa.xmpdata
   - purgecss.config.js
   - README.md
   - readme_preview/
