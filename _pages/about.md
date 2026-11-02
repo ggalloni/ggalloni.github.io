@@ -2,7 +2,7 @@
 layout: about
 title: about
 permalink: /
-subtitle: Postdoctoral researcher, <a href='https://www.fisica.unife.it/en'>Department of Physics and Earth Sciences</a>, University of Ferrara. <a href='https://litebird.isas.jaxa.jp/'>LiteBIRD</a> and <a href='https://simonsobservatory.org/'>Simons Observatory</a>.
+subtitle: Postdoctoral researcher, <a href='https://www.fe.infn.it/cosmologia/?lang=en'>CosmoFe</a>, <a href='https://fst.unife.it/en'>Department of Physics and Earth Sciences</a>, University of Ferrara. <a href='https://litebird.isas.jaxa.jp/'>LiteBIRD</a> and <a href='https://simonsobservatory.org/'>Simons Observatory</a>.
 
 profile:
   align: right
@@ -46,5 +46,5 @@ master's work with Nicola Bartolo and Angelo Ricciardone started the primordial
 gravitational-wave thread I am still pulling on. My bachelor's thesis, at the University of
 Florida, was on adaptive thermal-lensing compensation for LIGO.
 
-I teach Bayesian Statistics on the MSc in Physics at Ferrara, and I supervise or mentor
-four researchers at three institutions in two countries.
+I teach Bayesian Statistics on the MSc in Physics at Ferrara. Since February 2024 I have
+supervised or mentored four researchers at three institutions in two countries.

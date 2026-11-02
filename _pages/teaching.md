@@ -23,7 +23,8 @@ material existed. They were released openly and are still in use.
 
 ## Supervision and mentoring
 
-I supervise or mentor four researchers, at three institutions in two countries.
+Since February 2024 I have supervised or mentored four researchers, at three institutions in
+two countries.
 
 **Ph.D. student, University of Ferrara** (2024–, co-supervised with Luca Pagano). I first
 supervised her master's thesis on the reionization optical depth from a combined Planck and

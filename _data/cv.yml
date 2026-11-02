@@ -5,9 +5,9 @@ cv:
   location: Ferrara, Italy
   image: ''
   summary: 'My research focuses on cosmic inflation through the Cosmic Microwave Background (CMB) and
-    Gravitational Waves (GWs), with a methodological emphasis on likelihood analysis. I lead the large-scale
-    CMB likelihood effort within the LiteBIRD collaboration and co-lead the Likelihood & Theory group
-    of the Simons Observatory (SO), where I develop end-to-end pipelines that combine harmonic and pixel-based
+    Gravitational Waves (GWs), with a methodological emphasis on likelihood analysis. I lead the power-spectrum
+    estimation and likelihood effort within the LiteBIRD collaboration and the LT1 subgroup of the
+    Likelihood & Theory group of the Simons Observatory (SO), where I develop end-to-end pipelines that combine harmonic and pixel-based
     estimators with realistic component separation. In parallel, I develop CosmoForge, a unified likelihood framework for current and future CMB experiments, which I keep improving and extending with new features. On the science side, I have produced Bayesian
     and frequentist constraints on the amplitude and tilt of the primordial tensor spectrum, and I work
     on stochastic GW backgrounds and their cross-correlation with the CMB, including recent data-driven
@@ -29,13 +29,14 @@ cv:
 
         '
     Education:
-    - institution: University of Roma Tor Vergata
+    - institution: Sapienza University of Rome
       location: Rome, Italy
       area: Astronomy, Astrophysics and Space Science
       studyType: Ph.D. with honors
       start_date: 2020-11
-      end_date: 2024-01
+      end_date: 2024-04
       highlights:
+      - Research carried out at the University of Rome Tor Vergata.
       - 'Supervisors: Prof. Nicola Vittorio, Prof. Sabino Matarrese.'
       - 'Thesis: Exploring inflation with cosmic microwave background and gravitational waves.'
     - institution: University of Padova
@@ -54,11 +55,13 @@ cv:
       end_date: 2018-10
       highlights:
       - Thesis supervised by Prof. Giacomo Ciani, carried out at the University of Florida.
-    Fellowships, Visitings and Schools:
+    Fellowships, Grants, Visitings and Schools:
+    - bullet: '**2025** Departmental grant as sole PI, University of Ferrara. BICEP/Keck analysis with the
+        marginalized HL likelihood.'
+    - bullet: '**2023 – 2026** Six funded secondments to Japan (Kavli IPMU and KEK, about 16 weeks in total).
+        Through the MSCA project CMB-INFLATE.'
     - bullet: '**Sep 2023 – Dec 2023** Funded visiting researcher, IJCLab.'
-    - bullet: '**Jun 2023 – Jul 2023** Funded visiting researcher, Kavli IPMU. Through the MSCA project
-        CMB-INFLATE.'
-    - bullet: '**Nov 2020 – Jan 2024** Full Ph.D. fellowship, University of Roma La Sapienza.'
+    - bullet: '**Nov 2020 – Apr 2024** Full Ph.D. fellowship, Sapienza University of Rome.'
     - bullet: '**Jun 2017 – Sep 2017** Funded research internship, University of Florida. Adaptive thermal-lensing
         compensation for LIGO; bachelor thesis.'
     - bullet: '**Mar 2022** Workshop on Theoretical Aspects of Astroparticle Physics, Cosmology and Gravitation,
@@ -81,8 +84,8 @@ cv:
     - bullet: '**Jun 2024 – present** LiteBIRD — Foreground and Sensitivity Studies. Interfacing my Python
         package with foreground-separation techniques and sensitivity analyses critical for assessing
         LiteBIRD''s capabilities.'
-    - bullet: '**May 2024 – present** Simons Observatory — Likelihood & Theory. Maintenance and development
-        of SOLikeT. Contributed single-mode likelihoods and led a complete restructuring of LAT MFLike.'
+    - bullet: '**May 2024 – present** Simons Observatory — Likelihood & Theory. Lead of the LT1 subgroup;
+        maintenance and development of SOLikeT. Contributed single-mode likelihoods and led a complete restructuring of LAT MFLike.'
     - bullet: '**Sep 2024 – present** Simons Observatory — Power Spectrum. Contributing to the Power Spectrum
         group, with planned developments on QML-based estimators for large-scale modes.'
     - bullet: '**Jan 2026 – present** LiteBIRD — Moment-Expansion Component Separation. Collaborating
@@ -97,15 +100,19 @@ cv:
     - bullet: '**May 2022 – present** LiteBIRD — Tests on Cosmic Inflation. Monte Carlo study to understand
         which inflationary models can be detected by LiteBIRD.'
     Service and Leadership:
-    - bullet: '**Sep 2024 – present** Co-lead, Likelihood & Theory group, Simons Observatory.'
+    - bullet: '**2023 – present** Lead, power-spectrum estimation and likelihood effort, LiteBIRD Collaboration.'
+    - bullet: '**Sep 2024 – present** Lead, LT1 subgroup of the Likelihood & Theory group, Simons Observatory.'
     - bullet: '**Dec 2025 – present** Early Career Coordination (ECC) representative, LiteBIRD Collaboration.'
     - bullet: '**Feb 2026 – present** Member, Interim Governance Board, LiteBIRD Collaboration.'
+    - bullet: '**2026** Invited chair, discussion on Early Universe and Gravitational Waves, CosmoCLASSIC 2026,
+        Asiago (Italy).'
     - bullet: '**Jan 2026** Scientific Organizing Committee member, LiteBIRD Face-to-Face Collaboration
         Meeting.'
     - bullet: '**Jul 2024** Session organizer and chair, "Present and future of the CMB", Marcel Grossmann
         XVII Meeting.'
+    - bullet: '**Ongoing** Referee for MNRAS, JCAP and Astronomy and Computing.'
     Selected Talks:
-    - bullet: '**Jul 2026** Highlight Talk, Simons Observatory Collaboration Meeting, Toronto (Canada).'
+    - bullet: '**Jul 2026** Highlight Talk and two topical talks, Simons Observatory Collaboration Meeting, Toronto (Canada).'
     - bullet: '**Jul 2026** Invited Review Talk, CMB Challenges, Chino (Japan).'
     - bullet: '**May 2026** Invited Seminar, SISSA (Italy).'
     - bullet: '**Apr 2026** Invited Speaker, GRaviCon 2026, Pisa (Italy).'
